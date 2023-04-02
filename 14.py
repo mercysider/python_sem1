@@ -2,9 +2,7 @@
 
 N = int(input("Введите число N: "))
 i = 0
-new = 0
-while new <= N:
-    old = 2 ** i 
+while 2 ** i <= N:
+    print(2 ** i) 
     i += 1
-    print(old)
-    new = 2 ** i
+    
