@@ -4,15 +4,27 @@
 
 S = int(input("Введите сумму X+Y: "))
 P = int(input("Введите произведение X*Y: "))
-desicion = False
+decision = False
 
-for x1 in range(S):
-    if desicion != True:
-        for x2 in range(P):
-            if S == x1 + x2 and P == x1 * x2:
-                desicion = True
-                print(f"{x1}+{x2}={S}")
-                print(f"{x1}*{x2}={P}")
+for x in range(S):
+    if decision != True:
+        for y in range(S):
+            if S == x + y and P == x * y:
+                decision = True
+                print(f"{x}+{y}={S}")
+                print(f"{x}*{y}={P}")
 
-if desicion == False:
+if decision == False:
     print("Решений нет")
+
+# s = int(input())
+
+# p = int(input())
+
+# d = s**2 - 4*p
+
+# x = (s - d**0.5)/2
+
+# y = (s + d**0.5)/2
+
+# print(int(x), int(y))
