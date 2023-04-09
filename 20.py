@@ -27,8 +27,9 @@ word = input("Enter your word: ")
 total = 0
 
 for letter in word:
-    for keys, values in set_game.items():
-        if letter.upper() == keys:
-            total += values
+    #for keys, values in set_game.items():
+        #if letter.upper() == keys:
+            #total += values
+    total += set_game[letter.upper()]
 
 print(f"{word} = {total} очков")
